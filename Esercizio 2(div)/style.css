@@ -1,0 +1,122 @@
+
+
+.board{
+    width: 240px;
+    position: relative;
+    top: 50px;
+    left: 320px;
+    font-size: 0;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.row{
+    display: inline-block;
+    font-size: 0;
+}
+
+.board>.row>div{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+/*Costruzione scacchiera*/
+
+
+.board>.row:nth-child(odd)>div:nth-child(odd){
+    background-color: black;
+}
+
+.board>.row:nth-child(odd)>div:nth-child(even){
+    background-color: tan;
+}
+
+
+.board>.row:nth-child(even)>div:nth-child(even){
+    background-color: black;
+}
+
+.board>.row:nth-child(even)>div:nth-child(odd){
+    background-color: tan;
+}
+
+
+
+
+
+
+/*Hover sui div*/
+
+
+
+.board>.row>div:hover{
+    background-color: red!important;
+}
+
+
+
+/*Posizionamento lettere e numeri*/
+
+span{
+    font-size: 10px;
+}
+
+
+.board>.row:first-child>div>span{
+    position: absolute;
+    left: 10px;
+    top: -20px;
+}
+
+.board>.row:last-child>div>span{
+    position: absolute;
+    left: 10px;
+    bottom: -20px;
+}
+
+
+.board>.row:first-child>div:first-child>span:last-child{
+    position: absolute;
+    left: -10px;
+    top: 10px;
+}
+
+
+.board>.row:first-child>div:last-child>span:last-child{
+    position: absolute;
+    left: 33px;
+    top: 10px;
+}
+
+
+.board>.row:last-child>div:last-child>span:last-child{
+    position: absolute;
+    left: 34px;
+    bottom: 10px;
+}
+
+.board>.row:last-child>div:first-child>span:last-child{
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+}
+
+
+.board>.row:not(:first-child):not(:last-child)>div:first-child>span{
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+}
+
+.board>.row:not(:first-child):not(:last-child)>div:last-child>span{
+    position: absolute;
+    right: -10px;
+    bottom: 10px;
+}
+
