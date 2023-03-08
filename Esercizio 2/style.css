@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    position: relative;
+    font-size: 20px;
+    left: 370px;
+    top: 80px;
+}
+
+
+.scacchiera{
+    position: relative;
+    left: 300px;
+    top: 100px;
+}
+
+table{
+    border-spacing: 0;
+}
+
+td{
+    width: 25px;
+    height: 25px;
+}
+
+.scacchiera>table>thead>tr>td{
+    border: 0;
+    font-size: 8px;
+    text-align: center;
+ }
+
+
+ /*Lettere e numeri*/
+
+
+
+ .scacchiera>table>tbody>tr>td:first-child{
+    background-color: white !important;
+    font-size: 8px;
+    text-align: center;
+}
+.scacchiera>table>tbody>tr>td:last-child{
+    background-color: white !important;
+    font-size: 8px;
+    text-align: center;
+}
+
+.scacchiera>table>tbody>tr:last-child>td{
+    background-color: white !important;
+    font-size: 8px;
+    text-align: center;
+}
+
+
+
+
+
+/* Costruzione scacchiera*/
+
+
+.scacchiera>table>tbody>tr:nth-child(odd)>td:not(:first-child):not(:last-child):nth-child(odd){
+      background-color: black;
+}
+
+.scacchiera>table>tbody>tr:nth-child(odd)>td:not(:first-child):not(:last-child):nth-child(even){
+    background-color: tan;
+}
+
+.scacchiera>table>tbody>tr:nth-child(even)>td:not(:first-child):not(:last-child):nth-child(even){
+    background-color: black;
+}
+
+
+.scacchiera>table>tbody>tr:nth-child(even)>td:not(:first-child):not(:last-child):nth-child(odd){
+    background-color: tan;
+}
+
+
+
+
+.scacchiera>table>tbody>tr:first-child>td:not(:first-child):not(:last-child){
+    border-top: 1px solid black; 
+}
+
+
+
+.scacchiera>table>tbody>tr:not(:last-child)>td:nth-child(2){
+    border-left: 1px solid black;
+}
+
+
+.scacchiera>table>tbody>tr:not(:last-child)>td:nth-child(9){
+    border-right: 1px solid black;
+}
+
+
+.scacchiera>table>tbody>tr:last-child>td:not(:first-child):not(:last-child){
+    border-top: 1px solid black ;
+}
+
+
+/*Colorare la casella selezionata*/
+
+
+.scacchiera>table>tbody>tr:not(:last-child)>td:not(:first-child):not(:last-child):hover{
+    background-color: red;
+}
+
+
+
+

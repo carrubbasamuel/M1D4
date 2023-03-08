@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.container {
+    margin-left: 4rem;
+    margin-top: 4rem;
+    /*Esercizio 10*/
+    font-size: 0;
+  }
+
+/*Esercizio 1*/
+
+  .container div{
+    display: inline-block;
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+    position: relative;
+    /*Esercizio10*/
+    font-size: 1rem;
+  }
+
+  /*Esercizio 2*/
+
+  .container>div:nth-child(even){
+     border: solid red;
+  }
+
+
+  /*Esercizio 3*/
+
+.container>div:nth-child(odd)>span:nth-child(even){
+    color: green;
+}
+
+/*Esercizio 4*/
+
+.container>div:nth-child(2)>span:last-of-type{
+    color: blue;
+}
+
+/*Esercizio 5*/
+
+.container>div:nth-child(6)>span:not(:last-of-type){
+    color: yellow;
+}
+/*Esercizio 6*/
+
+.container>div>span:first-child{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: -50%;
+    left: 50%;
+    
+}
+
+/*Esercizio 7*/
+
+
+.container>div>span:nth-child(2){
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -20%;
+    left: 50%;
+    
+}
+
+
+/*Esercizio 8*/
+
+
+.container>div:last-child>span:last-child{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 115%;
+    
+}
+
+/*Esercizio 9*/
+
+
+
+.container>div:first-child>span:last-child{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: -15%;
+    
+}
+
+
